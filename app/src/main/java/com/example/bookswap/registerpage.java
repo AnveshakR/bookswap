@@ -2,8 +2,11 @@ package com.example.bookswap;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 
 public class registerpage extends AppCompatActivity {
+
+    private Button submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
