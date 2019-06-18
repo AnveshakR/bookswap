@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvreghead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:padding="16dp"
+        android:text="Registration"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:id="@+id/llname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvreghead"
+            android:layout_weight="1"
+            android:text="Name:" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llpn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvpn"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvname"
+            android:layout_weight="1"
+            android:text="Phone Number:" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lleid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_weight="1
+">
+
+        <TextView
+            android:id="@+id/tveid"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvpn"
+            android:layout_weight="1"
+            android:text="Email ID:" />
+
+        <EditText
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvpw"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tveid"
+            android:layout_weight="1"
+            android:text="Password:" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="submit" />
+    </RelativeLayout>
+
+</LinearLayout>
