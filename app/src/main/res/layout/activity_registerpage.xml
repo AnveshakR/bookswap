@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
@@ -23,13 +24,13 @@
 
         <TextView
             android:id="@+id/tvname"
-            android:layout_width="wrap_content"
+            android:layout_width="25dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvreghead"
             android:layout_weight="1"
             android:text="Name:" />
 
         <EditText
+            android:id="@+id/etname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -48,17 +49,16 @@
 
         <TextView
             android:id="@+id/tvpn"
-            android:layout_width="41dp"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvname"
             android:layout_weight="1"
             android:text="Phone Number:" />
 
         <EditText
+            android:id="@+id/etphone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="text"
             android:singleLine="true" />
 
     </LinearLayout>
@@ -74,14 +74,14 @@
 
         <TextView
             android:id="@+id/tveid"
-            android:layout_width="198dp"
+            android:layout_width="34dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvpn"
             android:layout_weight="1"
             android:text="Email ID:" />
 
         <EditText
-            android:layout_width="178dp"
+            android:id="@+id/etemail"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:inputType="text"
@@ -98,13 +98,13 @@
 
         <TextView
             android:id="@+id/tvpw"
-            android:layout_width="41dp"
+            android:layout_width="23dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tveid"
             android:layout_weight="1"
             android:text="Password:" />
 
         <EditText
+            android:id="@+id/etpassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
