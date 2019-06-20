@@ -23,7 +23,7 @@ public class databaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("create table "+TABLE_NAME+"(NAME TEXT PRIMARY KEY AUTOINCREMENT, PHONE TEXT, EMAIL TEXT, PASSWORD TEXT)");
+        db.execSQL("create table "+TABLE_NAME+"(Name TEXT PRIMARY KEY AUTOINCREMENT, Phone TEXT, Email TEXT, Password TEXT)");
 
     }
 
@@ -39,7 +39,7 @@ public class databaseHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL_1, name);
+        contentValues.put(COL_1,name);
         contentValues.put(COL_2,phone);
         contentValues.put(COL_3,email);
         contentValues.put(COL_4,password);
