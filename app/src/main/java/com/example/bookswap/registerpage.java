@@ -1,5 +1,6 @@
 package com.example.bookswap;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,10 +33,15 @@ public class registerpage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 boolean submission = myDB.submit(name.getText().toString(),phone.getText().toString(),email.getText().toString(),password.getText().toString());
-                if (submission)
-                    Toast.makeText(registerpage.this, "Registration successful",Toast.LENGTH_LONG).show();
+                if (submission){
+
+                    Toast.makeText(registerpage.this, "Registration successful, login again",Toast.LENGTH_LONG).show();
+                    Intent registertologin = new Intent(registerpage.this,MainActivity.class);
+                    startActivity(registertologin);
+                }
+
                 else
-                    Toast.makeText(registerpage.this, "Registration unsuccessful",Toast.LENGTH_LONG).show();
+                    Toast.makeText(registerpage.this, "Registration unsuccessful, try again",Toast.LENGTH_LONG).show();
             }
         });
     }
