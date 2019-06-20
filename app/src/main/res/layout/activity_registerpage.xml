@@ -1,128 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".registerpage">
 
     <TextView
-        android:id="@+id/tvreghead"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:fontFamily="cursive"
-        android:padding="16dp"
         android:text="Registration"
-        android:textSize="32sp" />
+        android:textSize="46sp" />
 
-    <LinearLayout
-        android:id="@+id/llname"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:layout_weight="1">
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:text="Enter Username"
+        android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tvname"
-            android:layout_width="25dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Name:" />
-
-        <EditText
-            android:id="@+id/etname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="text"
-            android:singleLine="true" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llpn"
+    <EditText
+        android:id="@+id/etname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:layout_weight="1">
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:hint="Enter Desired Username" />
 
-        <TextView
-            android:id="@+id/tvpn"
-            android:layout_width="32dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Phone Number:" />
-
-        <EditText
-            android:id="@+id/etphone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:singleLine="true" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lleid"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:layout_weight="1
-">
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:text="Enter Email ID"
+        android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tveid"
-            android:layout_width="34dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Email ID:" />
-
-        <EditText
-            android:id="@+id/etemail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="text"
-            android:singleLine="true" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <EditText
+        android:id="@+id/etemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:layout_weight="1">
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:hint="Enter Email ID" />
 
-        <TextView
-            android:id="@+id/tvpw"
-            android:layout_width="23dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Password:" />
-
-        <EditText
-            android:id="@+id/etpassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="text"
-            android:singleLine="true" />
-
-    </LinearLayout>
-
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="16dp">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="submit"
-            android:id="@+id/btsubmit"/>
-    </RelativeLayout>
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:text="Enter Mobile Number"
+        android:textSize="16sp" />
 
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:hint="Enter Mobile Number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Enter Password"
+        android:gravity="bottom"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit" />
 </LinearLayout>
